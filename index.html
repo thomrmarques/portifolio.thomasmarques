@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google fontes- escolhi a fonte Roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Fim google fontes-->
+    <link rel="stylesheet" href="style.css">
+
+    <script src="menu.js" defer></script>
+    <title>Portifólio Thomas Marques</title>
+</head>
+<body>
+    
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="#l1"><!--Ao clicar na logo, nos iremos para a tela Home-->
+                    <img src="Imagens/Logo_preta.png" width="250px 450px" alt="Logo">
+                </a>
+            </div> <!--logo-->
+
+            <nav class="menu-desktop">
+                <!--Coloquei em todos os botoes e lista os links para ir direto no site-->
+                <ul>
+                    <li><a href="#l1">Home</a></li>
+                    <li><a href="#l2">Especialidades</a></li>
+                    <li><a href="#l3">Sobre</a></li>
+                    <li><a href="#l4">Projetos</a></li>
+                </ul>
+            </nav>
+            
+            <div class="thomas-contato">
+                <a href="#l5">
+                    <button>Contato</button>
+                </a>
+            </div>
+
+            <div class="btn-abrir-menu" id="btn-menu">
+                <img src="Imagens/menu_hamb.png" width="20%">
+            </div><!--btn-abrir-menu-->
+
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <img src="Imagens/botao_fachar.png" width="20%" alt="">
+                </div><!--btn-fechar-->
+
+                <nav>
+                    <ul>
+                        <li><a href="#l1">Home</a></li>
+                        <li><a href="#l2">Especialidades</a></li>
+                        <li><a href="#l3">Sobre</a></li>
+                        <li><a href="#l4">Projetos</a></li>
+                        <li><a href="#l5">Contato</a></li>
+                    </ul>
+                </nav>
+
+            </div><!--menu-mobile-->
+            <div class="overlay-menu" id="overlay-menu"></div>
+        </div> <!--interface-->  
+    </header>
+
+    <main>
+        <section class="topo-do-site" id="l1">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-topo-site">
+                        <h1>Olá, bem-vindo(a) ao meu Portifólio<span>.</span></h1> <!--O uso do span foi para deixar o ponto com outra cor-->
+                        <br>
+                        <p>Neste espaço, você encontrará exemplos do meu trabalho em design e programação, destacando minha evolução e os conhecimentos adquiridos até agora. Estou sempre aberto a feedbacks construtivos e colaborações que possam me ajudar a crescer como profissional.</p>
+                        <br>
+                        <p>Obrigado por visitar o meu portfólio!</p>
+                        <br>
+                        <div class="thomas-contato">
+                            <a href="#l5">
+                                <button>Entre em contato</button>
+                            </a>
+                        </div><!--div do thomas-contato-->
+                    </div> <!--txt-topo-site Texto do inicio do site-->
+
+                    <div class="img-topo-site">
+                        <img src="Imagens/Foto2.png" alt="Minha foto">
+                    </div> <!--img-topo-site imagem do inicio do site-->
+                </div> <!--flex-->
+            </div> <!--interface-->
+        </section> <!--Topo-do-site-->
+
+        <section class="especialidades" id="l2">
+            <div class="interface">
+                <h2 class="titulo">Minhas <span>Especialidades</span>.</h2>
+                <div class="flex">
+                    <div class="especialidades-box">
+                        <img src="Imagens/Icon1.png" width="25%" alt="Icone 1">
+                        <h3>HTML / CSS / JavaScript</h3>
+                        <p>Tendo concluído duas aulas introdutórias sobre o assunto. Estou empolgado para aplicar os fundamentos do desenvolvimento web em projetos práticos e continuar expandindo meus conhecimentos.</p>
+                    </div> <!--especialidades-box icone 1-->
+
+                    <div class="especialidades-box">
+                        <img src="Imagens/Icon2.png" width="30%" alt="Icone 2">
+                        <h3>Figma</h3>
+                        <p>Tenho realizado diversos projetos na ferramenta Figma, onde aplico meus conhecimentos teóricos de design para criar interfaces visuais e protótipos interativos. 
+                        </p>
+                    </div> <!--especialidades-box icone 2-->
+
+                    <div class="especialidades-box">
+                        <img src="Imagens/Icon3.png" width="20%" alt="Icone 3">
+                        <h3>Banco de Dados</h3>
+                        <p>Embora minha experiência prática em banco de dados seja limitada a uma aula introdutória, estou ansioso para mergulhar mais fundo neste campo e desenvolver habilidades sólidas nessa área essencial da engenharia de software.</p>
+                    </div> <!--especialidades-box icone 3-->
+                </div> <!--flex-->
+            </div> <!--interface-->
+        </section> <!--especialidades-->
+
+        <section class="sobre" id="l3">
+            <div class="interface">
+                <div class="flex">
+                    <div class="img-sobre">
+                        <img src="Imagens/foto002.jpeg" width="140%" alt="Foto1">
+                    </div><!--img-sobre-->
+
+                    <div class="txt-sobre">
+                        <h2>Muito prazer, sou <span>Thomas Robson Marques.</span></h2>
+                        <br>
+                        <p>Estudante de Engenharia de Software, atualmente no terceiro semestre. Minha jornada até aqui tem sido diversa e enriquecedora. Morei na Irlanda por cinco anos, uma experiência que ampliou minha perspectiva cultural e me proporcionou grandes aprendizados.</p>
+                        <br>
+                        <p>Antes do eu intercâmbio, servi na Força Aérea Brasileira por quatro anos, onde desenvolvi disciplina, trabalho em equipe e habilidades técnicas que aplico até hoje nos meus estudos e projetos. Agora, estou focado em construir uma carreira na área de tecnologia, com especial interesse em design e desenvolvimento web, utilizando HTML, CSS e JavaScript.</p>
+                        <br>
+                        <p>Estou constantemente buscando novas oportunidades para aplicar meus conhecimentos teóricos em práticas reais.</p>
+                        <br><br>
+                        <div class="btn-social">
+                        <a href="https://www.linkedin.com/in/thomas-rmarques/"><button><img src="Imagens/Linkedin.png" width="65%" alt=""></button></a>
+                        <a href="https://www.instagram.com/thomrmarques/"><button><img src="Imagens/Instagram.png" width="65%" alt=""></button></a>
+                    </div><!--btn-social-->
+                    </div><!--txt-sobre-->
+                </div><!--flex-->
+            </div><!--Interface-->
+        </section><!--sobre-->
+
+        <section class="portifolio" id="l4">
+            <div class="interface">
+                <h2 class="titulo">Meu <span>Portifólio</span>.</h2>
+                <div class="flex">
+                    <div class="img-port" style="background-image: url(Imagens/Portifolio.png);">
+                        <div class="overlay"><a href="https://www.figma.com/proto/ZSOT88J1Z4wZGxB6OZAoAP/Modelo_UNINTER?page-id=5%3A679&node-id=5-2241&viewport=89%2C359%2C0.3&t=88HsOvLMhDDA0Az8-1&scaling=min-zoom">Projeto 1</a></div>
+                    </div>
+                    <div class="img-port" style="background-image: url(Imagens/Portifolio2.png);">
+                        <div class="overlay"><a href="https://www.figma.com/proto/gTUbevzZ3uM8VFvTpJZXUW/Prot%C3%B3tipo-Loja?page-id=0%3A1&node-id=5-2&viewport=549%2C327%2C0.5&t=TzlXt5nTvwZGVuMx-1&scaling=scale-down&starting-point-node-id=5%3A2&show-proto-sidebar=1">Projeto 2</a></div>
+                    </div>
+                    <div class="img-port" style="background-image: url(Imagens/Portifolio3.png);">
+                        <div class="overlay">Próximo Projeto</div>
+                    </div>
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--portifolio-->
+
+        <section class="formulario" id="l5">
+            <div class="interface">
+                <h2 class="titulo"><span>Contato</span>.</h2>
+
+                <form method="post" action="email.php"> 
+                    <input type="text" name="nome" id="nome" placeholder="Seu nome:" required>
+                    <input type="text" name="email" id="email" placeholder="Seu email:" required>
+                    <textarea name="mensagem" id="mensagem" placeholder="Sua mensagem:" required></textarea>
+                    <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
+                </form>
+            </div><!--interface-->
+        </section><!--formulario-->
+
+    </main>
+
+    <footer>
+        <div class="interface">
+            <div class="line-footer">
+                <div class="flex">
+                    <div class="logo-footer">
+                        <img src="Imagens/Logo_branca.png" width="250px 450px" alt="Logo2">
+                    </div><!--logo-footer-->
+                    <div class="btn-social">
+                        <a href="https://www.linkedin.com/in/thomas-rmarques/"><button><img src="Imagens/Linkedin.png" width="65%" alt=""></button></a>
+                        <a href="https://www.instagram.com/thomrmarques/"><button><img src="Imagens/Instagram.png" width="65%" alt=""></button></a>
+                    </div><!--btn-social-->
+                </div>
+            </div><!--line-footer-->
+
+            <div class="line-footer borda">
+                <p><a href="mailto:thom_marques@hotmail.com"> thom_marques@hotmail.com </a></p>
+            </div><!--line-footer-->
+        </div><!--interface-->
+    </footer>
+
+</body>
+</html>

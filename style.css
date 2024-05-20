@@ -1,0 +1,460 @@
+/* ESTILO GERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif; /*essa é a fonte que será usada*/
+}
+
+body{
+    background-color: white;
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.thomas-contato button{
+    padding: 5px 20px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.917);
+    font-weight: 600;
+    background-color: #E1782C;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .2s;
+} /*alterar o estilo do botao contato*/
+
+h2.titulo{
+    color: black;
+    font-size: 30px;
+    text-align: center;
+} /*Para alterar o estilo das h2*/
+
+h2.titulo span{
+    color: #E1782C;
+}
+
+button:hover, form .btn-enviar input:hover{
+    box-shadow: 0px 0px 8px #e1772ccf;
+    transform: scale(1.05);
+}
+
+/* ESTILO DO CABEÇALHO */
+header{
+    padding: 10px 1%;
+    background-color: black;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: .2s;
+    font-size: 20px;
+}
+
+header a{
+    color: #5c5c5c;
+    text-decoration: none;
+    display: inline-block;
+} /*função para mudar a cor da ul*/
+
+header nav.menu-desktop a:hover{
+    color: white;
+    transform: scale(1.05);
+} /*função para ao passar o mouse a ul muda de cor e da o zoom*/
+
+header nav ul{
+    list-style-type: none;
+} /*essa função é para tirar as bolinhas da lista ul*/
+
+header nav.menu-desktop ul li{
+    display: inline-block;
+    padding: 0 40px;
+} /*função para deixar a li um do lado da outra*/
+
+/*ESTILO DO MENU MOBILE*/
+.btn-abrir-menu img{
+    padding-right: 10px;
+    height: 25px;
+    width: 45px;
+    display: none;
+}
+
+.menu-mobile{
+    background-color: black;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.menu-mobile.abrir-menu{
+    width: 70%;
+}
+
+.menu-mobile.abrir-menu ~ .overlay-menu{
+    display: block;
+}
+
+.menu-mobile .btn-fechar img{
+    padding: 30px 4%;
+}
+
+.menu-mobile nav ul{
+    text-align: right;
+}
+
+.menu-mobile nav li a{
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 4%;
+    display: block;
+}
+
+.menu-mobile nav li a:hover{
+    background-color: #E1782C;
+    color: black;
+}
+
+.overlay-menu{
+    background-color: #000000b7;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+}
+
+/* ESTILO DA TELA HOME*/
+section.topo-do-site{
+    padding: 40px 4%;
+    background-color: #e1e0e0;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+}
+
+.topo-do-site .txt-topo-site h1{
+    color: black;
+    font-size: 30px;
+} /*Para mudar a cor e o tamanho da h1*/
+
+.topo-do-site .txt-topo-site h1 span{
+    color: #E1782C;
+    font-size: 50px;
+} /*Para mudar a cor do ponto final da h1*/
+
+.topo-do-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+
+@keyframes flutuar {
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+} /*Esse é um efeito para a imagem flutuar*/
+
+/*ESTILO DAS ESPECIALIDADES*/
+section.especialidades{
+    padding: 40px 4%;
+}
+
+section.especialidades .flex{
+    gap: 60px;
+}
+
+.especialidades .especialidades-box{
+    color: black;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+.especialidades .especialidades-box:hover{
+    transform: scale(1.05px);
+    box-shadow: 0 0px 20px #e1772ccf;
+}/* essa funcao dará o efeito de sobra ao passar o mouse */
+
+.especialidades .especialidades-box h3{
+    font-size: 24px;
+    margin: 15px 0;
+}
+
+/*ESTILO DO SOBRE*/
+section.sobre{
+    padding: 80px 4%;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 150px;
+}
+
+.sobre .txt-sobre{
+    color: black;
+}
+
+.sobre .txt-sobre h2{
+    font-size: 38px;
+    line-height: 40px;
+}
+
+.sobre .txt-sobre h2 span{
+    color: #E1782C;
+    display: block;
+}
+
+.sobre .txt-sobre p{
+    text-align: justify;
+}
+
+.btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: white;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+} /*Botões das redes sociais*/
+
+/*ESTILO DO PORTIFÓLIO*/
+section.portifolio{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #e1772c37;
+}
+
+section.portifolio .flex{
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.img-port{
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+.img-port:hover{
+    background-position: 100% 100%;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.424);
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color:white;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+
+/*ESTILO DO FORMULÁRIO*/
+section.formulario{
+    padding: 80px 4%;
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: #242424;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: white;
+    font-size: 18px;
+}
+
+form input::placeholder{
+    color: #E1782C;
+}
+
+form textarea::placeholder{
+    color: #E1782C;
+}
+
+form textarea{
+    resize: none;
+    max-height: 200px;
+}
+
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input[type=submit]{
+    width: 120px;
+    background-color: #E1782C;
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+
+/* ESTILO DO RODAPÉ*/
+footer{
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #e1772c37;
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .line-footer{
+    padding: 20px 10%;
+}
+
+.borda{
+    border-top: 2px solid #E1782C;
+}
+
+footer .line-footer p a{
+    color: black;
+}
+
+/*PARA MOBILE - CÓDIGO PARA RESPONSÍVEL*/
+
+@media screen and (max-width: 1020px) {
+    /*Classes gerais*/
+    .flex{
+        flex-direction: column;
+    }
+
+    .topo-do-site .flex{
+        flex-direction: column-reverse;
+    }
+    /*cabeçalho*/
+    .menu-desktop, .thomas-contato{
+        display: none;
+    }
+    
+    /*Topo do site*/
+
+    section.topo-do-site .flex{
+        gap: 40px;
+    }
+
+    .topo-do-site .img-topo-site img{
+        width: 100%;
+    }
+
+    /*Especialidades*/
+
+    section.especialidades .flex{
+        gap: 2px;
+    }
+
+    /*Especialidades*/
+
+    section.especialidades{
+        padding: 40px 8%;
+    }
+
+    /*Sobre*/
+    .img-sobre img{
+        width: 100%;
+    }
+
+    section.sobre .flex{
+        gap: 50px;
+        flex-direction: column-reverse;
+    }
+
+    .sobre .txt-sobre h2{
+        font-size: 34px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .btn-social {
+        text-align: center;
+    }
+
+    /*Portifólio*/
+
+    section.portifolio{
+        padding: 80px 8%;
+    }
+
+    .img-port{
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    section.portifolio .flex{
+        gap: 60px;
+    }
+
+    /*Rodapé*/
+
+    footer .flex{
+        flex-direction: column;
+    }
+
+    footer .line-footer{
+        text-align: center;
+    }
+
+    .btn-abrir-menu img{
+        padding-right: 10px;
+        height: 25px;
+        width: 45px;
+        display: block;
+    }
+} 
